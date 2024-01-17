@@ -1,3 +1,6 @@
 [submodule "qc-framework"]
 	path = qc-framework
 	url = git@github.com:asam-ev/qc-framework.git
+[submodule "qc-opendrive"]
+	path = qc-opendrive
+	url = git@github.com:asam-ev/qc-opendrive.git
