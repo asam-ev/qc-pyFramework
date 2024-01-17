@@ -1,0 +1,3 @@
+[submodule "qc-framework"]
+	path = qc-framework
+	url = git@github.com:asam-ev/qc-framework.git
