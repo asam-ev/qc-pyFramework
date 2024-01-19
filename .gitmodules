@@ -1,0 +1,6 @@
+[submodule "qc-opendrive"]
+	path = qc-opendrive
+	url = https://github.com/asam-ev/qc-opendrive
+[submodule "qc-openscenarioxml"]
+	path = qc-openscenarioxml
+	url = https://github.com/asam-ev/qc-openscenarioxml
