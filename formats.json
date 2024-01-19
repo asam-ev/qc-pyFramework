@@ -1,0 +1,12 @@
+{
+    "xodr": {
+            "name": "OpenDRVE",            
+            "extension": "xodr",
+            "shortcut": "ODR"
+    },    
+    "xosc": {
+        "name": "OpenDRIVE",            
+        "extension": "xosc",
+        "shortcut": "OSC"
+    }
+}
