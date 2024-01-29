@@ -23,10 +23,11 @@ We want to achieve a free, comprehensive and uniform validation of ASAM OpenX St
 
     **Needed packages:**
    
-| name            | used version | installation link for windows     | installation link for macOS            |
-|-----------------|--------------|-----------------------------------|----------------------------------------|
-| lxml            | 4.9.3        | py -m pip install lxml            | python3 -m pip install lxml            |
-| scipy           | 1.21.6       | py -m pip install scipy           | python3 -m pip install scipy           |
+| name            | used version | installation link for windows     | installation link for macOS            | What is it used for?
+|-----------------|--------------|-----------------------------------|----------------------------------------|----------------------
+| lxml            | 4.9.3        | py -m pip install lxml            | python3 -m pip install lxml            | read, parse xml
+| scipy           | 1.21.6       | py -m pip install scipy           | python3 -m pip install scipy           | scalar caluculation
+| xmlschema       | 23.3.2       | py -m pip install xmlschema       | python3 -m pip install xmlschema       | validate schema version 1.1
 
 # Development
 Used integrated development environment: Visual Studio Code version 1.84.2
@@ -70,6 +71,10 @@ Used integrated development environment: Visual Studio Code version 1.84.2
          - individual check
    - [examples]
     - examples for each check and category
+   - [examples]
+    - Documentation of current checks, Tables for possible checks
+- [format]
+  - presentations
 
 # Categories
 - base checks
