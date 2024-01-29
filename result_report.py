@@ -147,6 +147,12 @@ def create_location_from_error(error) -> List[Location]:
         locations.append(XmlLocation(error.path))
     return locations
 
+def create_location_from_xPath(xpath: str) -> List[Location]:
+    locations = [
+        XmlLocation(xpath)
+    ]
+    return locations
+
 
 def create_location_from_element(el: etree._Element) -> List[Location]:
     locations = [ 
