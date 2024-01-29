@@ -144,9 +144,15 @@ def validate(file: Path, additional_check_dirs: List[str], config_path: Path, fo
     file = file.expanduser()
     file = file.resolve()
     
-    # find format settings
+    #  extension handling
     if format_extension == None:
         format_extension = file.suffix.lstrip('.')
+    else:
+        if format_extension != file.suffix.lstrip('.'):
+            logging.error(f'Not supported file format: {file.suffix.lstrip('.')} of file {file}')
+            return result_report, False   
+    
+    # find format settings     
     format_path = Path(__file__).parent / f'{format_extension}/format.json'
     if not format_path.exists() or not format_path.is_file():
         logging.error(f'Provided format description path does not exist or is not a file: {format_path.absolute()}')
